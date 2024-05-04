@@ -41,10 +41,7 @@ terraform.rc
 securi.tf
 
 # Bashscript config
-bdconfig.sh
-frontconfig.sh
-gatewayconfig.sh
-apiconfig.sh
+
 
 # Others
 .terraform.lock.hcl
