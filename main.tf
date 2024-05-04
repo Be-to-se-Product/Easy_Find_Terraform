@@ -121,7 +121,7 @@ resource "aws_security_group" "my_private_security_group" {
 resource "aws_instance" "gateway_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeypair"
   subnet_id     = aws_subnet.subnet-public.id
   associate_public_ip_address = true  # Habilita a atribuição automática de IP público
 
@@ -193,7 +193,7 @@ resource "aws_instance" "gateway_easy_find" {
 resource "aws_instance" "frontend1_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-public.id
   associate_public_ip_address = true
   
@@ -208,7 +208,7 @@ resource "aws_instance" "frontend1_easy_find" {
 resource "aws_instance" "frontend2_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-public.id
   associate_public_ip_address = true
 
@@ -222,7 +222,7 @@ resource "aws_instance" "frontend2_easy_find" {
 resource "aws_instance" "backload_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-private.id
   
 
@@ -237,7 +237,7 @@ resource "aws_instance" "backload_easy_find" {
 resource "aws_instance" "bd_instance" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-private.id
   
 
@@ -251,7 +251,7 @@ resource "aws_instance" "bd_instance" {
 resource "aws_instance" "backend1_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-private.id
   
 
@@ -265,7 +265,7 @@ resource "aws_instance" "backend1_easy_find" {
 resource "aws_instance" "backend2_easy_find" {
   ami           = "ami-04b70fa74e45c3917"
   instance_type = "t2.micro"
-  key_name      = "mago-de-oz"
+  key_name      = "mykeyp"
   subnet_id     = aws_subnet.subnet-private.id
   
 
